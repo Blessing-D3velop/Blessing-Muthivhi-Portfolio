@@ -11,15 +11,15 @@
 h1{
   font-size: 45px;
   margin-bottom: 20px;
-  color: #00f2fe; /* neon-ish for headings */
+  color: #00f2fe; 
 }
 
 .home-section p{
   font-size: 20px;
-  color: #c0c0c0; /* softer text for readability */
+  color: #c0c0c0; 
 }
 
-/* moving gradient for background if needed */
+
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -29,5 +29,63 @@ h1{
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+.home-section-buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+}
+.view-projects-button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #313333, #0ff, #030a0a);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  } .external-icon{
+    width: 25px;
+  }
+.contact-me-button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(-45deg, #313333, rgb(25, 34, 34), #030a0a);
+  background-size: 600% 600%;
+  animation: gradientMove 8s ease infinite;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #0ff;
+  } .contact-icon{
+    width: 22px;
+  }
+.scroll-down-container{
+  margin-top: 120px;
+}
+.scroll-down-text{
+  font-size: 100px;
+}
+.scroll-down-icon{
+  width: 30px;
+  animation: bounce 2s infinite;
+}
+@media(max-width: 600px){
+  .home-section-buttons-container{
+    flex-direction: column;
+  }
+  .scroll-down-container{
+  margin-top: 70px;
   }
 }
