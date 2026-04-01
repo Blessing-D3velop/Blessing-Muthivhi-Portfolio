@@ -1,0 +1,136 @@
+body{
+  padding-top: 100px;
+  margin: 0;
+  height: 2000px;
+  background-color: #0b0f1a; 
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+  color: aliceblue;
+}
+.hamburger{
+  display: none;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  font-family: roboto, arial;
+  justify-content: space-between;
+  padding: 18px 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgba(10, 15, 25, 0.8);
+  backdrop-filter: blur(12px);
+  color: aliceblue;
+  animation: headerGlow 4s ease-in-out infinite;
+}
+.portfolio-text{
+  font-size:20px;
+  color: #00f2fe;
+}
+
+.hero-section{
+  display: flex;
+  gap: 25px;
+  margin: 0 20px;
+}
+
+.hero-section p {
+  cursor: pointer;
+  transition: 0.3s;
+  color: aliceblue;
+}
+
+.hero-section p:hover {
+  color: #00f2fe;
+  transform: translateY(-2px);
+}
+
+/* RIGHT BUTTONS */
+.right-section{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.right-section button {
+  transition: 0.3s;
+}
+
+/* buttons */
+.right-section button:hover {
+  transform: scale(1.05);
+}
+
+.donwnload-cv-button{
+  border: none;
+  padding: 6px ;
+  border-radius: 10px;
+  background-color: #00f2fe;
+  color: #0b0f1a; /* dark text for contrast */
+  font-weight: 500;
+}
+.profile-container{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.profile-picture{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border:#00f2fe 2px solid;
+  object-fit: cover;
+}
+
+/* ANIMATIONS */
+@keyframes headerGlow {
+  0% {
+    box-shadow: 0 0 0px rgba(0, 242, 254, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 0px rgba(0, 242, 254, 0.2);
+  }
+}
+
+@media (max-width: 850px) {
+  .hamburger {
+    display: block;
+    font-size: 25px;
+  }
+  .hero-section {
+    display: none; /* hidden by default on small screens */
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    background-color: rgba(10, 15, 25, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+  }
+  .hero-section {
+    display: none;
+  }
+}
+@media (max-width: 440px) {
+  .Developer{
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .profile-container{
+    display: none;
+  }
+}
+@media (max-width: 250px) {
+  .donwnload-cv-button{
+    display: none;
+  }
+}

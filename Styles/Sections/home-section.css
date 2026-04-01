@@ -1,0 +1,33 @@
+.home-section{
+  height: auto;
+  text-align: center;
+  margin-top: 60px;
+  color: aliceblue;
+  font-family: roboto, arial;
+  background-color: #0b0f1a; 
+  padding: 20px 20px;
+}
+
+h1{
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #00f2fe; /* neon-ish for headings */
+}
+
+.home-section p{
+  font-size: 20px;
+  color: #c0c0c0; /* softer text for readability */
+}
+
+/* moving gradient for background if needed */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
