@@ -5,7 +5,7 @@
   color: aliceblue;
   font-family: roboto, arial;
   background-color: #0b0f1a; 
-  padding: 20px 20px;
+  padding: 20px 40px;
 }
 
 h1{
@@ -15,7 +15,8 @@ h1{
 }
 
 .home-section p{
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 1.6;
   color: #c0c0c0; 
 }
 
@@ -49,7 +50,7 @@ h1{
   background-size: 600% 600%;
   animation: gradientMove 8s ease infinite;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   } .external-icon{
     width: 25px;
@@ -65,7 +66,7 @@ h1{
   background-size: 600% 600%;
   animation: gradientMove 8s ease infinite;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   border: 1px solid #0ff;
   } .contact-icon{
@@ -81,15 +82,31 @@ h1{
   font-size: 100px;
 }
 
-.scroll-down-icon{
+.scroll-down-icon {
   width: 30px;
-  animation: bounce 2s infinite;
+  animation: bounceUpDown 1.8s infinite ease-in-out;
 }
-@media(max-width: 600px){
+
+@keyframes bounceUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media(max-width: 768px){
   .home-section-buttons-container{
     flex-direction: column;
   }
   .scroll-down-container{
   margin-top: 70px;
+  }
+  .home-section{
+    padding: 20px;
   }
 }
