@@ -1,0 +1,77 @@
+.contact-section {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0b0f1a, #1a1f2e);  
+}
+
+.cta-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cta-section h2 {
+  color: #00f2fe;
+  font-size: 32px;
+}
+
+.cta-section p {
+  color: #c0c0c0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(0,242,254,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+}
+
+.contact-item h3 {
+  color: #00f2fe;
+}
+
+.contact-item a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,242,254,0.3);
+  background: rgba(255,255,255,0.03);
+  color: aliceblue;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #00f2fe;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0b0f1a;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: scale(1.05);
+}

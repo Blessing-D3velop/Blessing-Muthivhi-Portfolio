@@ -112,7 +112,7 @@ body{
     display: none;
   }
   .header-container {
-    background-color: rgba(10, 15, 25, 0.95); /* stronger opacity */
+    background-color: rgba(10, 15, 25, 0.95);
   }
 }
 @media (max-width: 320px) {
@@ -121,7 +121,7 @@ body{
   }
 }
 @media (max-width: 250px) {
-  .donwnload-cv-button{
+  .download-cv-button{
     display: none;
   }
 }
