@@ -111,6 +111,9 @@ body{
   .Developer{
     display: none;
   }
+  .header-container {
+    background-color: rgba(10, 15, 25, 0.95); /* stronger opacity */
+  }
 }
 @media (max-width: 320px) {
   .profile-container{
