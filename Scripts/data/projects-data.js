@@ -7,6 +7,13 @@
     code: "https://github.com/Blessing-D3velop/Lindsay-Salon"
   },
   {
+    title: "Beyond Beauty Pure Harmony Spa Website",
+    description: "Luxury spa website designed for a real client business, featuring services, interactive gallery, video showcase, and responsive layout with smooth navigation.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    live: "https://beyond-beauty-spa.vercel.app/",
+    code: "https://github.com/Blessing-D3velop/Beyond-Beauty-Spa"
+  },
+  {
     title: "Labza Co Construction Website",
     description: "Construction company website showcasing services and contact info.",
     stack: ["HTML", "CSS", "JavaScript"],
