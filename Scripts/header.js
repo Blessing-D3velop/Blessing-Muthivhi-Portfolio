@@ -39,3 +39,15 @@ navLinks.forEach(link => {
       });
     });
 });
+
+
+const downloadBtns = document.querySelectorAll('.js-download-cv-button');
+
+downloadBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const link = document.createElement('a');
+    link.href = 'Blessing_Muthivhi_CV.pdf.pdf'; 
+    link.download = 'Blessing-Muthivhi-CV.pdf';
+    link.click();
+  });
+});
